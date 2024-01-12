@@ -1,0 +1,60 @@
+.mainpage-container {
+    background-image: url('/public/images/background.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 150px);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+}
+
+.hello-window {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+    background-color: rgb(62, 57, 56);
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 0 40px rgb(255, 180, 180);
+    animation: popUp 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+  
+  .start-button {
+    display: block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    margin-left: auto; 
+    margin-right: auto;
+    background-color:rgb(98, 89, 87);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .start-button:hover {
+    background-color: rgba(216, 73, 79, 1);
+    box-shadow: 0 0 40px rgba(216, 73, 79, 1);
+  }
+  
+  @keyframes popUp {
+    0% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.05);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 1;
+    }
+  }
