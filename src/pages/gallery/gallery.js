@@ -1,16 +1,7 @@
-import React from 'react';
-import './gallery.css'; 
+import React from 'react'
 
-const Gallery = ({ membersData }) => {
+export const Gallery = () => {
   return (
-    <div className="gallery-container">
-      {membersData.map((member) => (
-        <div className="gallery-item" key={member.id}>
-          <img src={member.image} alt={member.name} />
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default Gallery;
+    <div>gallery</div>
+  )
+}

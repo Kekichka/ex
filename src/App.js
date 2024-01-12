@@ -5,7 +5,7 @@ import MainPage from './pages/mainpage/mainpage';
 import Members from './pages/members/members';
 import { Favourites } from './pages/favourites/favourites';
 import { BandInfo } from './pages/band_info/band_info';
-import Gallery from './pages/gallery/gallery';
+import { Gallery } from './pages/gallery/gallery';
 
 
 function App() {
