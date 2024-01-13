@@ -4,9 +4,33 @@
     text-align: left;
   }
   
+  .mainpage-line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px; 
+    height: 100%;
+    background-image: url('/public/images/line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  
+  .mainpage-line2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px; 
+    height: 100%;
+    background-image: url('/public/images/line.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+  }
+  
   .sidebar {
     width: 200px;
-    height: 200vh;
+    height: 455vh;
     padding: 20px;
     background-image: url('/public/images/contentline.png');
   }
@@ -20,11 +44,14 @@
     letter-spacing: 1.5px;
     color: rgba(216, 73, 79, 1);
     text-shadow: 0 0 7px rgba(216, 73, 79, 1);
+    position: fixed;
   }
   
   .sidebar ul {
     list-style: none;
     padding: 0;
+    position: fixed;
+    margin-top: 150px;
   }
   
   .sidebar li {
@@ -34,6 +61,7 @@
     padding-left: 10px;
     padding-top: 5px;
     font-size: 20px;
+    
   }
 
   .sidebar li:hover {

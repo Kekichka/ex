@@ -1,31 +1,31 @@
-/* Global styles */
 body, html {
     height: 100%;
     margin: 0;
-    background-color: rgb(112, 112, 112);
+    background-color: rgb(26, 36, 77);
     color: whitesmoke;
 }
 
-/* Container for member cards */
 .members-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     height: 100%;
 }
 
 /* Individual member card */
 .member-row {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
 }
 
 .member-card {
     margin-top: 50px;
+    margin: 20 20px;
+    margin-left: 60px;
+    margin-right: 60px;
     padding: 10px;
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    flex: 1;
 }
 
 .member-card img {

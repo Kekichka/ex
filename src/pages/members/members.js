@@ -2,15 +2,16 @@ import React, { useState } from 'react';
 import './members.css';
 
 const Members = () => {
+  
   const [selectedMember, setSelectedMember] = useState(null);
 
   const membersData = [
     { id: 1, name: 'Gackt', image: '/images/Gackt10.jpg', info: 'Gakuto Oshiro (大城 ガクト, Ōshiro Gakuto, born July 4, 1973), better known by his mononymous stage name GACKT is a Japanese singer-songwriter, musician, record producer and actor.' },
     { id: 2, name: 'Kami', image: '/images/Kami10.jpg', info: 'Info about Kami' },
-    { id: 3, name: 'Kozi', image: '/images/Kozi1.jpg', info: 'Info about Kozi' },
+    { id: 3, name: 'Közi', image: '/images/Kozi1.jpg', info: 'Info about Közi' },
     { id: 4, name: 'Klaha', image: '/images/Klaha2.jpg', info: 'Info about Klaha' },
     { id: 5, name: 'Mana', image: '/images/ManaSama5.jpg', info: 'Info about Mana' },
-    { id: 6, name: 'Yuki', image: '/images/Yuki6.jpg', info: 'Info about Yuki' },
+    { id: 6, name: 'Yu~ki', image: '/images/Yuki6.jpg', info: 'Info about Yu~ki' },
     { id: 7, name: 'Tetsu', image: '/images/Tetsu2.jpg', info: 'Info about Tetsu' },
   ];
 
@@ -25,6 +26,7 @@ const Members = () => {
   const renderMembers = (start, end) => {
     return membersData.slice(start, end).map((member) => (
       <div className="member-card" key={member.id} onClick={() => openModal(member)}>
+
         <img src={member.image} alt={member.name} />
         <p>{member.name}</p>
       </div>
@@ -33,6 +35,8 @@ const Members = () => {
 
   return (
     <div className="members-container">
+      <div className="mainpage-line"></div>
+        <div className="mainpage-line2"></div>
       <div className="member-row">
         {renderMembers(0, 4)}
       </div>
