@@ -22,7 +22,7 @@ a {
     text-transform: uppercase;
     letter-spacing: 2px;
     padding-top: 5px;
-    outline: none; /* Remove the default focus outline */
+    outline: none; 
 }
 
 a:hover,

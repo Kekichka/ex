@@ -92,11 +92,11 @@ const Gallery = () => {
       >
         <div className="modal-content">
           <button className="arrow-button arrow-button-prev" onClick={() => navigate('prev')}>
-            &lt; Prev
+            &lt; 
           </button>
           <img src={imageSources[selectedImageIndex]} alt={`${selectedImageIndex + 1}`} />
           <button className="arrow-button arrow-button-next" onClick={() => navigate('next')}>
-            Next &gt;
+             &gt;
           </button>
           <button className="close" onClick={closeModal}>X</button>
         </div>

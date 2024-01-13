@@ -1,5 +1,4 @@
-/* gallery.css */
-.gallery {
+  .gallery {
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,7 +25,7 @@
   
   .modal-content img {
     width: 420px;
-    height: 510px; /* Set a fixed height to crop the image */
+    height: 510px;
     object-fit: cover;
   }
   
