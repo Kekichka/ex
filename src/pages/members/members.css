@@ -1,3 +1,4 @@
+/* Global styles */
 body, html {
     height: 100%;
     margin: 0;
@@ -5,6 +6,7 @@ body, html {
     color: whitesmoke;
 }
 
+/* Container for member cards */
 .members-container {
     display: flex;
     flex-direction: column;
@@ -12,12 +14,12 @@ body, html {
     height: 100%;
 }
 
+/* Individual member card */
 .member-row {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
 }
-
 
 .member-card {
     margin-top: 50px;
@@ -33,9 +35,22 @@ body, html {
 }
 
 .member-card:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
+/* Add border and transition for smooth effect */
+.member-card {
+    border: 2px solid transparent;
+    transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border 0.3s ease-out;
+}
+
+/* Selected state styles */
+.member-card.selected {
+    border: 2px solid #ffffff;
+}
+
+/* Modal styles */
 .modal {
     display: flex;
     justify-content: center;
@@ -56,6 +71,8 @@ body, html {
     padding: 20px;
     background: white;
     border-radius: 5px;
+    padding-left: 40px;
+    width: 40%;
 }
 
 .close {
@@ -71,6 +88,7 @@ body, html {
     color: #000000;
 }
 
+/* Modal details animation */
 .modal-details {
     display: flex;
     flex-direction: column;
@@ -82,26 +100,40 @@ body, html {
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
 }
 
-.modal-content:hover .modal-details {
-    transform: translateX(0);
-    opacity: 1;
+.member-card.selected .modal-details {
+    animation: slideInFromLeft 0.5s ease-out;
 }
 
-@keyframes slideIn {
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
 
+/* Modal image styles */
 .modal-image {
-    width: 30%;
-    max-height: 70%;
+    width: 150px;
+    height: 200px;
     object-fit: contain;
 }
 
+/* Member information styles */
 .member-info {
-    width: 60%;
+    width: auto;
     text-align: left;
     color: black;
+}
+
+p {
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+h2 {
+    padding-left: 20px;
 }
