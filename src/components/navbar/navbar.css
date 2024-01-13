@@ -1,7 +1,7 @@
 .navbar {
     height: 150px;
     width: 100%;
-    background-color: rgb(62, 57, 56);
+    background-image: url('/public/images/navbar.png');
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -23,6 +23,7 @@
   a:focus {
     outline: none;
     color:rgba(216, 73, 79, 1); 
+    text-shadow: 0 0 7px rgba(216, 73, 79, 1);
   }
   
   .title a {

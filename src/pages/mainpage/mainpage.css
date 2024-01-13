@@ -11,12 +11,36 @@
         
 }
 
+.mainpage-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150px; 
+  height: 100%;
+  background-image: url('/public/images/line.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.mainpage-line2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 150px; 
+  height: 100%;
+  background-image: url('/public/images/line.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
 .hello-window {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.5);
-    background-color: rgb(62, 57, 56);
+    background-image: url('/public/images/popup.bg.png');
     padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 40px rgb(255, 180, 180);

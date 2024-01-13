@@ -1,0 +1,62 @@
+.band-info-container {
+    display: flex;
+    color: rgb(255, 255, 255);
+    text-align: left;
+  }
+  
+  .sidebar {
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    background-image: url('/public/images/contentline.png');
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 45px;
+    padding-left: 20px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: rgba(216, 73, 79, 1);
+    text-shadow: 0 0 7px rgba(216, 73, 79, 1);
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    padding-left: 10px;
+    padding-top: 5px;
+    font-size: 20px;
+  }
+
+  .sidebar li:hover {
+    transform: scale(1.1);
+    color: rgba(216, 73, 79, 1);
+    text-shadow: 0 0 7px rgba(216, 73, 79, 1);
+  }
+  
+  .sidebar li:focus {
+    outline: none;
+    color:rgba(216, 73, 79, 1); 
+    text-shadow: 0 0 7px rgba(216, 73, 79, 1);
+  }
+  
+  .band-content {
+    flex: 1;
+    padding: 20px;
+    padding-left: 50px;
+    padding-top: 50px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+  }
+  
+  /* Add additional styling as per your design */
+  

@@ -10,9 +10,11 @@ const MainPage = () => {
 
   return (
     <div className="mainpage-container">
+      <div className="mainpage-line"></div>
+      <div className="mainpage-line2"></div>
       {showPopup && (
         <div className="hello-window">
-          Welcome to the Malice Mizer page!<br/> <br/> Here you can get to know more about this beautiful band!
+          Welcome to the Malice Mizer page!<br/><br/> Here you can get to know more about this beautiful band!
           <button className="start-button" onClick={closePopup}>
             Let's Start
           </button>
