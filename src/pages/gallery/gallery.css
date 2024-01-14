@@ -1,6 +1,7 @@
   .gallery {
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(47, 57, 108);
   }
   
   .gallery-item {

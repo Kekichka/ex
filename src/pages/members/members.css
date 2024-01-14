@@ -1,7 +1,10 @@
 body, html {
     height: 100%;
     margin: 0;
-    background-color: rgb(26, 36, 77);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/public/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: whitesmoke;
 }
 
@@ -12,7 +15,6 @@ body, html {
     height: 100%;
 }
 
-/* Individual member card */
 .member-row {
     display: flex;
     justify-content: center;
@@ -39,18 +41,11 @@ body, html {
     cursor: pointer;
 }
 
-/* Add border and transition for smooth effect */
 .member-card {
     border: 2px solid transparent;
     transition: transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94), border 0.3s ease-out;
 }
 
-/* Selected state styles */
-.member-card.selected {
-    border: 2px solid #ffffff;
-}
-
-/* Modal styles */
 .modal {
     display: flex;
     justify-content: center;
