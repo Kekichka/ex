@@ -83,21 +83,26 @@ const BandInfo = () => {
 
   const renderAlbumInfo = (albums) => {
     switch (albums) {
-      case 'Memoire (1994)':
+      case 'Memoire (1994)' :
         return (
           <p>
-            "De Mémoire"<br/>	
-            "Kioku to Sora" (記憶と空; "Memory and Sky")<br/>	
-          	"Ēge Umi ni Sasagu" (エーゲ海に捧ぐ; "Dedicated to the Aegean Sea")<br/>	
-	          "Gogo no Sasayaki" (午後のささやき; "Whispers in the Afternoon")<br/>	
-	          "Miwaku no Rooma" (魅惑のローマ; "Enchanted in Rome")<br/>	
-	          "Seraph"	<br/>	
-	          "Baroque" (バロック)
-          </p>
+          <a href="https://www.youtube.com/watch?v=SU1Qu7ts_Kw" target="_blank" rel="noopener noreferrer">Listen to Memoire</a><br/>
+          <br/>
+          "De Mémoire"<br/>
+          "Kioku to Sora" (記憶と空; "Memory and Sky")<br/>
+          "Ēge Umi ni Sasagu" (エーゲ海に捧ぐ; "Dedicated to the Aegean Sea")<br/>
+          "Gogo no Sasayaki" (午後のささやき; "Whispers in the Afternoon")<br/>
+          "Miwaku no Rooma" (魅惑のローマ; "Enchanted in Rome")<br/>
+          "Seraph"	<br/>
+          "Baroque" (バロック)
+        </p>
         );
+
       case 'Voyage Sans Retour (1996)':
         return (
           <p>
+            <a href="https://www.youtube.com/watch?v=t6jiuWsRiZQ" target="_blank" rel="noopener noreferrer">Listen to Voyage Sans Retour</a><br/>
+          <br/>
             "Yami no Kanata e~" (闇の彼方へ～) <br/>
             "Transylvania" <br/>
             "Tsuioku no Kakera" (追憶の破片かけら～a piece of broken recollection～) <br/>
@@ -113,6 +118,8 @@ const BandInfo = () => {
         case 'Merveilles (1998)':
           return (
             <p>
+               <a href="https://www.youtube.com/watch?v=MIuA8rHI5GY" target="_blank" rel="noopener noreferrer">Listen to Merveilles</a><br/>
+          <br/>
               "De Merveilles"
               "Syunikiss (Nidome no Aitō)" (Syunikiss〜二度目の哀悼〜; "Second Lament")	
               "Bel Air (Kūhaku no Toki no Naka de)" (ヴェル・エール～空白の瞬間ときの中で～; "In the Blank Time")
@@ -130,6 +137,8 @@ const BandInfo = () => {
           case 'Bara no Seidou (2000)':
             return (
               <p>
+                <a href="https://www.youtube.com/watch?v=xW7lrDo9T2Q"  target="_blank" rel="noopener noreferrer">Listen to Bara no Seidou</a><br/>
+          <br/>
                 "Bara ni Irodorareta Akui to Higeki no Makuake" (薔薇に彩られた悪意と悲劇の幕開け; A Prelude of Malice and Mizery, Painted by the Rose)  <br/>
                 "Seinaru Toki Eien no Inori" (聖なる刻　永遠の祈り; Holy Time, Eternal Prayer) <br/>
 	              "Kyomu no Naka de no Yuugi" (虚無の中での遊戯; Amusement in Nihilism) <br/>
