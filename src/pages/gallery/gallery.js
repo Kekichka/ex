@@ -3,28 +3,6 @@ import Modal from 'react-modal';
 import './gallery.css';
 
 
-const Gallery = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [selectedImageIndex, setSelectedImageIndex] = useState(0);
-
-  const openModal = (index) => {
-    setSelectedImageIndex(index);
-    setModalIsOpen(true);
-  };
-
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
-
-  const navigate = (direction) => {
-    const newIndex =
-      direction === 'next'
-        ? (selectedImageIndex + 1) % imageSources.length
-        : (selectedImageIndex - 1 + imageSources.length) % imageSources.length;
-
-    setSelectedImageIndex(newIndex);
-  };
-
   const imageSources = [
     'images/gallery/Band/Band1.jpg',
     'images/gallery/Band/Band2.jpg',
@@ -76,7 +54,37 @@ const Gallery = () => {
     'images/gallery/Yuki/Yuki8.jpg',
   ];
 
-  return (
+  const Gallery = () => {
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [selectedImageIndex, setSelectedImageIndex] = useState(0);
+    const [likedImages, setLikedImages] = useState(Array(imageSources.length).fill(false));
+
+  const openModal = (index) => {
+    setSelectedImageIndex(index);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  const toggleLike = () => {
+    const updatedLikedImages = [...likedImages];
+    updatedLikedImages[selectedImageIndex] = !updatedLikedImages[selectedImageIndex];
+    setLikedImages(updatedLikedImages);
+  };
+
+  const navigate = (direction) => {
+    const newIndex =
+      direction === 'next'
+        ? (selectedImageIndex + 1) % imageSources.length
+        : (selectedImageIndex - 1 + imageSources.length) % imageSources.length;
+
+    setSelectedImageIndex(newIndex);
+  };
+
+
+    return (
     <div className="gallery">
       {imageSources.map((src, index) => (
         <div className="gallery-item" key={index} onClick={() => openModal(index)}>
@@ -91,16 +99,25 @@ const Gallery = () => {
         className="modal"
         overlayClassName="overlay"
       >
-        <div className="modal-content">
-          <button className="arrow-button arrow-button-prev" onClick={() => navigate('prev')}>
-            &lt; 
-          </button>
-          <img src={imageSources[selectedImageIndex]} alt={`${selectedImageIndex + 1}`} />
-          <button className="arrow-button arrow-button-next" onClick={() => navigate('next')}>
-             &gt;
-          </button>
-          <button className="close" onClick={closeModal}>x</button>
-        </div>
+        {modalIsOpen && (
+          <div className="modal-content">
+            <button className="arrow-button arrow-button-prev" onClick={() => navigate('prev')}>
+              &lt; 
+            </button>
+            <img src={imageSources[selectedImageIndex]} alt={`${selectedImageIndex + 1}`} />
+            <button className="arrow-button arrow-button-next" onClick={() => navigate('next')}>
+              &gt;
+            </button>
+
+            <div className="like-container">
+              <button className="like-button" onClick={toggleLike}>
+                {likedImages[selectedImageIndex] ? 'Unlike' : 'Like'}
+              </button>
+            </div>
+
+            <button className="close" onClick={closeModal}>x</button>
+          </div>
+        )}
       </Modal>
     </div>
   );
