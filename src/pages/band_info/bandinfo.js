@@ -121,16 +121,16 @@ const BandInfo = () => {
                <a href="https://www.youtube.com/watch?v=MIuA8rHI5GY" target="_blank" rel="noopener noreferrer">Listen to Merveilles</a><br/>
           <br/>
               "De Merveilles"
-              "Syunikiss (Nidome no Aitō)" (Syunikiss〜二度目の哀悼〜; "Second Lament")	
-              "Bel Air (Kūhaku no Toki no Naka de)" (ヴェル・エール～空白の瞬間ときの中で～; "In the Blank Time")
-              "Illuminati"
-              "Brise"
-              "Aegean (Sugisarishi Kaze to Tomo ni)" (エーゲ〜過ぎ去りし風と共に〜; "With the Passing Wind")
-              "Au Revoir"
-              "Je te Veux"
-              "S-Conscious"	Mana	3:20
-              "Le Ciel"	Gackt	5:00
-              "Gekka no Yasōkyoku" (月下の夜想曲)	Közi	3:45
+              "Syunikiss (Nidome no Aitō)" (Syunikiss〜二度目の哀悼〜; "Second Lament")<br/>	
+              "Bel Air (Kūhaku no Toki no Naka de)" (ヴェル・エール～空白の瞬間ときの中で～; "In the Blank Time")<br/>
+              "Illuminati"<br/>
+              "Brise"<br/>
+              "Aegean (Sugisarishi Kaze to Tomo ni)" (エーゲ〜過ぎ去りし風と共に〜; "With the Passing Wind")<br/>
+              "Au Revoir"<br/>
+              "Je te Veux"<br/>
+              "S-Conscious"	<br/>
+              "Le Ciel"	<br/>
+              "Gekka no Yasōkyoku" (月下の夜想曲)<br/>
               "Bois de Merveilles"
             </p>
           );

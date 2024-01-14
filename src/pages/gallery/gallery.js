@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Modal from 'react-modal';
 import './gallery.css';
 
+
 const Gallery = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedImageIndex, setSelectedImageIndex] = useState(0);
@@ -98,7 +99,7 @@ const Gallery = () => {
           <button className="arrow-button arrow-button-next" onClick={() => navigate('next')}>
              &gt;
           </button>
-          <button className="close" onClick={closeModal}>X</button>
+          <button className="close" onClick={closeModal}>x</button>
         </div>
       </Modal>
     </div>

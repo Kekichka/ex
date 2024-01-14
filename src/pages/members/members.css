@@ -83,41 +83,6 @@ body, html {
     color: #000000;
 }
 
-/* Modal details animation */
-.modal-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    width: 100%;
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-}
-
-.member-card.selected .modal-details {
-    animation: slideInFromLeft 0.5s ease-out;
-}
-
-@keyframes slideInFromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Modal image styles */
-.modal-image {
-    width: 150px;
-    height: 200px;
-    object-fit: contain;
-}
-
-/* Member information styles */
 .member-info {
     width: auto;
     text-align: left;
@@ -125,10 +90,10 @@ body, html {
 }
 
 p {
-    padding-left: 20px;
-    font-size: 20px;
+   padding-left: 9px;
+   font-size: 20px;
 }
 
 h2 {
-    padding-left: 20px;
+    padding-left: 9px;
 }
